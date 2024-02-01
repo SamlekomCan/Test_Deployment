@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // No.1
+      document.write("NO. 1<br>");
+      let myArray = [];
+      myArray.push("Apple");
+      myArray.push("Banana");
+      myArray.pop();
+      myArray.unshift("Orange");
+      myArray.shift();
+
+      document.write(myArray.toString());
+
+      //No.2
+      document.write("<br><br>NO. 2<br>");
+      let firstArray = ["Saya Pergi"];
+      let SecondArray = ["Ke Sekolah"];
+
+      //Cara1
+      let gabungArray = firstArray.concat(SecondArray);
+      document.write(gabungArray.join(`, `));
+      //Cara2
+      //document.write(firstArray.concat(SecondArray).join(`, `));
+
+      //No.3
+      document.write("<br><br>NO. 3<br>");
+      let numbers = [];
+      function generateRandomArray(length) {
+        for (let i = 0; i < length; i++) {
+          let randomNumber = parseInt(Math.floor(Math.random() * (100 - 1)));
+          numbers.push(randomNumber);
+        }
+        return numbers;
+      }
+      let angka = generateRandomArray(10);
+
+      document.write("Angka Awal : " + angka.toString());
+      document.write(
+        "<br>Angka Desc : " +
+          angka
+            .sort((a, b) => a - b)
+            .reverse()
+            .toString()
+      );
+
+      //No.4
+      document.write("<br><br>NO. 4<br>");
+      let fruits = ["apple", "banana", "orange", "grape", "kiwi"];
+      fruits.splice(1, 2);
+      document.write(fruits.toString());
+
+      //No.5
+      let sentence = `Hello,World,JavaScript`;
+
+      let sentenceArray = sentence.split(`,`);
+
+      console.log(sentenceArray);
+    </script>
+  </body>
+</html>

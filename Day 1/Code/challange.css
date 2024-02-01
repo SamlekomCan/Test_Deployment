@@ -1,0 +1,123 @@
+body {
+  background-color: rgb(220, 242, 242);
+}
+#header {
+  background-color: #ffffff;
+  color: #fff;
+  padding: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+nav {
+  text-align: right;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  padding: 10px 4px;
+  border-radius: 1px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+button {
+  border: 40x solid #000000;
+  padding: 18px 45px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 5px;
+}
+button.b1 {
+  color: #ffffff;
+  background-color: #0032e6; /* Green */
+}
+button.b2 {
+  color: #1c8e00;
+  background-color: #ffffff; /* Green */
+}
+
+table {
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.flex-container-column {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+.flex-container-row {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  margin-bottom: 20px;
+  flex-direction: row;
+}
+.flex-container-row > input {
+  width: 100%;
+  padding: 5px;
+  margin: auto;
+}
+.flex-container-row > button {
+  width: 100%;
+  padding: 5px;
+  margin: auto;
+  background-color: #1c8e00;
+  color: #ffffff;
+}
+.flex-container-row > div {
+  flex: 0 1 (10%);
+  margin-bottom: 0px;
+  padding: 5px;
+  border: 0px solid #ccc;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+
+.flex-container-row2 > div {
+  font-weight: bold;
+  flex: 0 1 (10%);
+  margin-bottom: 0px;
+  padding: 5px;
+  border: 0px solid #ccc;
+  box-sizing: border-box;
+  margin-left: 20px;
+}
+.flex-container-row3 > div {
+  flex: 0 1 (10%);
+  margin-bottom: 0px;
+  padding: 5px;
+  border: 0px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* .flex-container > div {
+  flex: 0 1 calc(50% - 10px);
+  margin-bottom: 10px;
+  padding: 0px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+} */
+.wrapper {
+  background-color: #ffffff;
+}

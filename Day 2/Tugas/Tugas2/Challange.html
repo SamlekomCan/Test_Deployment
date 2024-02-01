@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="challange.css" />
+    <script type="text/javascript" src="challange.js"></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <nav>
+        <tr>
+          <td><a href="">HOME</a></td>
+          <td><a href="">PRODUCT</a></td>
+          <td><a href="">GALLERY</a></td>
+          <td><a href="">BLOG</a></td>
+          <td><a href="">INVENTORY</a></td>
+        </tr>
+      </nav>
+    </div>
+    <section class="wrapper">
+      <div class="flex-container-row">
+        <div><img src="dev.png" alt="" width="180" height="180" /></div>
+        <div>
+          <h1 id="pNama">M. Ikhsan Abimanyu</h1>
+          <p id="pRole">Back End Designer</p>
+          <button class="b1">KONTAK</button>
+          <button class="b2">RESUME</button>
+        </div>
+        <div class="flex-container-row2">
+          <div>
+            <p>Availability</p>
+            <p>Usia</p>
+            <p>Lokasi</p>
+            <p>Pengalaman</p>
+            <p>Email</p>
+          </div>
+        </div>
+        <div class="flex-container-row3">
+          <div>
+            <p id="pAva">Full Time</p>
+            <p id="pUsia">19</p>
+            <p id="pLoc">Jakarta</p>
+            <p id="pExp">2 Tahun</p>
+            <p id="pEmail">icanikhsan44@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wrapper">
+      <div class="flex-container-row">
+        <label for="nama">Nama</label>
+        <input type="text" name="namaForm" id="inNama" />
+
+        <label for="role">Role</label>
+        <input type="text" name="roleForm" id="inRole" />
+
+        <label for="availability">Availability</label>
+        <input type="text" name="availabilityForm" id="inAva" />
+
+        <label for="usia">Usia</label>
+        <input type="text" name="usiaForm" id="inUsia" />
+
+        <label for="lokasi">Lokasi</label>
+        <input type="text" name="LokasiForm" id="inLoc" />
+
+        <label for="">Years Experience</label>
+        <input type="text" name="ExperienceForm" id="inExp" />
+
+        <label for="">Email</label>
+        <input type="text" name="emailForm" id="inEmail" />
+        <button onclick="funcClick()">Submit</button>
+      </div>
+    </section>
+  </body>
+</html>
