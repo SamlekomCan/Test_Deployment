@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="fetchUserData"></h2>
+
+    <script>
+      function fetchUserData(username, callback) {
+        const apiUrl = `https://api.github.com/users/${username}`; // Enclose URL in backticks
+
+        // Using fetch for HTTP GET request
+        fetch(apiUrl)
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error(
+                `Failed to fetch data. Status: ${response.status}`
+              );
+            }
+            return response.json();
+          })
+          .then((data) => {
+            callback(null, data);
+          })
+          .catch((error) => {
+            callback(error, null);
+          });
+      }
+
+      fetchUserData("Fmushady", function (error, data) {
+        if (error) {
+          console.error(`Error: ${error.message}`);
+        } else {
+          console.log("Data from GitHub API:", data);
+          document.getElementById("fetchUserData").innerText = JSON.stringify(
+            data,
+            null,
+            2
+          );
+        }
+      });
+    </script>
+  </body>
+</html>

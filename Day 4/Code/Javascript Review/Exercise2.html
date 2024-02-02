@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let dataDiri = {
+        nama_depan: "M. Ikhsan",
+        nama_belakang: "Abimanyu",
+        hobi: ["Olahraga", "Game", "Makan"],
+        angka_favorit: 5,
+        memakai_kacamata: false,
+      };
+
+      console.log(
+        "Nama Lengkap:",
+        dataDiri.nama_depan + " " + dataDiri.nama_belakang
+      );
+
+      dataDiri.angka_favorit = 8;
+      console.log("Update Angka:", dataDiri);
+
+      dataDiri.hobi.push("Coding");
+      console.log("Menambah Hobi:", dataDiri);
+
+      dataDiri.lulusan = "Hacktiv8";
+      console.log("Update Lulusan:", dataDiri);
+
+      console.log("Hobi-hobi:");
+      for (let i = 0; i < dataDiri.hobi.length; i++) {
+        console.log(dataDiri.hobi[i]);
+      }
+
+      console.log("Keys Object:", Object.keys(dataDiri));
+      console.log("Values Object:", Object.values(dataDiri));
+
+      console.log("Properties dengan Format key : values:");
+      for (const key in dataDiri) {
+        console.log(key + " : " + dataDiri[key]);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise Log 8</title>
+  </head>
+  <body>
+    <script>
+      function cariAngkaPrima(angkaPertama, angkaKedua) {
+        let angkaPrima = [];
+
+        function isPrime(number) {
+          if (number < 2) {
+            return false;
+          }
+          for (let index = 2; index <= Math.sqrt(number); index++) {
+            if (number % index === 0) {
+              return false;
+            }
+          }
+          return true;
+        }
+
+        for (let index = angkaPertama; index <= angkaKedua; index++) {
+          if (isPrime(index)) {
+            angkaPrima.push(index);
+          }
+        }
+
+        return angkaPrima;
+      }
+
+      console.log(`Angka prima ` + cariAngkaPrima(1, 5));
+      console.log(`Angka prima ` + cariAngkaPrima(5, 7));
+      console.log(`Angka prima ` + cariAngkaPrima(10, 20));
+    </script>
+  </body>
+</html>
